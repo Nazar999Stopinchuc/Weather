@@ -3,8 +3,8 @@ import { key, input } from "./globals";
 export async function getWeatherData(query, isCoordinates = false) {
   try {
     const url = isCoordinates
-      ? `http://api.openweathermap.org/data/2.5/weather?lat=${query.lat}&lon=${query.lon}&appid=${key}&units=metric`
-      : `http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}&units=metric`;
+      ? `https://api.openweathermap.org/data/2.5/weather?lat=${query.lat}&lon=${query.lon}&appid=${key}&units=metric`
+      : `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${key}&units=metric`;
 
 
     const response = await fetch(url);
