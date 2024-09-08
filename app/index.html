@@ -17,6 +17,7 @@
 <body>
   <main class="main">
     <section class="weather">
+
       <div class="container">
 
         <div class="weather__box">
@@ -34,7 +35,7 @@
             </ul>
           </form>
 
-          <img class="weather__img" src="images/clear-sky-d.png" alt="description">
+          <img class="weather__img" src="images/weather-desk/clear-sky-d.png" alt="description">
           <div class="weather__temp"></div>
           <p class="weather__city"></p>
 
@@ -44,7 +45,7 @@
                 <use xlink:href="images/sprite.svg#humidity"></use>
               </svg>
               <p class="info__value" id="humidity"></p>
-              <h3 class="info__title">Humidity</h3>
+              <h3 class="info__title" id="humidity-title">Humidity</h3>
             </div>
 
             <div class="info__wrap">
@@ -52,9 +53,16 @@
                 <use xlink:href="images/sprite.svg#wind"></use>
               </svg>
               <p class="info__value" id="wind"></p>
-              <h3 class="info__title">Wind speed</h3>
+              <h3 class="info__title" id="wind-title">Wind speed</h3>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="error none">
+        <div class="error__wrap">
+          <p class="error__text"></p>
+          <button class="error__btn" type="button">Ok</button>
         </div>
       </div>
     </section>

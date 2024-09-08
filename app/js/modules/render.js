@@ -46,7 +46,7 @@ export async function weatherRender(query, isCoordinates = false) {
     name.textContent = isCoordinates ? query.cityName : cityInfo.name;
     humidity.textContent = `${cityInfo.humidity} %`;
     wind.textContent = `${cityInfo.wind_speed} km/h`;
-    icon.src = `images/${weatherDescription[cityInfo.icon]}.png`;
+    icon.src = `images/weather-desk/${weatherDescription[cityInfo.icon]}.png`;
   } catch (error) {
     console.log('Ошибка:', error);
   }

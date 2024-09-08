@@ -18,11 +18,6 @@ body {
   background-color: transparent;
 }
 
-.hide {
-  opacity: 1;
-  animation: hide-elem 2s forwards;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -44,4 +39,8 @@ body {
   max-width: 1210px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.none {
+  display: none !important;
 }
